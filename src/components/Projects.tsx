@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaLinkedin, 
-  FaExternalLinkAlt, 
   FaMobile, 
   FaGlobe, 
   FaCalendarAlt,
