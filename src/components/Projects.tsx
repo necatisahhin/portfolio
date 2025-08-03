@@ -121,7 +121,7 @@ const Projects: React.FC = () => {
         "Takım iletişim araçları",
         "Proje analitikleri"
       ],
-      linkedin: "https://www.linkedin.com/posts/necatisahhin_typescript-nodejs-postgresql-activity-7341447705770000384-8YhS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj4qr8ByQ41hBroJnwZds-B1PtgnGnOs3U",
+      linkedin: "",
       demo: null,
       featured: true
     },
@@ -149,6 +149,31 @@ const Projects: React.FC = () => {
     },
     {
       id: 7,
+      title: "E-Ticaret Backend API",
+      description: "Dual-role mimarisi ile hem müşteri hem satıcı deneyimini destekleyen kapsamlı e-ticaret platformu backend'i. Gerçek zamanlı bildirimler ve gelişmiş ödeme sistemi içeren profesyonel API.",
+      longDescription: "TypeScript ve Express.js ile geliştirilmiş enterprise-level e-ticaret backend API'si. Mikroservis benzeri modüler yapı, role-based access control ve multi-seller sipariş yönetimi özellikleri içerir. Real-time bildirimler ve background job processing ile güçlü bir altyapıya sahiptir.",
+      image: "/api/placeholder/400/250",
+      technologies: ["TypeScript", "Express.js", "PostgreSQL", "Prisma", "Redis", "RabbitMQ", "Socket.IO", "JWT", "Winston", "Joi"],
+      category: "web",
+      type: "Backend API",
+      status: "Completed",
+      date: "2024",
+      features: [
+        "Dual-role mimarisi (Customer/Seller)",
+        "Role-based access control (RBAC)",
+        "Multi-seller sipariş yönetimi",
+        "Gerçek zamanlı sipariş bildirimleri",
+        "Redis tabanlı sepet işlemleri",
+        "Background job processing",
+        "Transaction güvenliği",
+        "Kapsamlı error handling"
+      ],
+      linkedin: "https://www.linkedin.com/posts/necatisahhin_typescript-nodejs-postgresql-activity-7341447705770000384-8YhS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj4qr8ByQ41hBroJnwZds-B1PtgnGnOs3U",
+      demo: null,
+      featured: true
+    },
+    {
+      id: 8,
       title: "Öğrenci Pazarı",
       description: "Üniversite öğrencileri için full-stack e-ticaret platformu. React + TypeScript frontend ve Node.js backend ile sıfırdan geliştirilen ikinci el ürün alım-satım uygulaması.",
       longDescription: "Full-stack web uygulaması olarak geliştirilen bu platform, öğrencilerin dolap, koltuk, buzdolabı gibi ürünleri güvenli şekilde alıp satmasını sağlar. JWT kimlik doğrulama, çoklu resim yükleme ve PostgreSQL veritabanı ile güçlü bir altyapıya sahiptir.",
