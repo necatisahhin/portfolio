@@ -407,10 +407,6 @@ const Contact: React.FC = () => {
                 <span className="stat-number">6+</span>
                 <span className="stat-label">Tamamlanan Proje</span>
               </div>
-              <div className="cta-stat">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">Müşteri Memnuniyeti</span>
-              </div>
             </div>
           </div>
         </motion.div>

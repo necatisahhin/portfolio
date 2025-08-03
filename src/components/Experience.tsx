@@ -199,7 +199,7 @@ const Experience: React.FC = () => {
           <div className="summary-card">
             <h3>Deneyim Özeti</h3>
             <p>
-              3+ yıllık deneyimim boyunca <strong>15+ proje</strong> geliştirdim ve 
+              2+ yıllık deneyimim boyunca <strong>6+ proje</strong> geliştirdim ve 
               <strong> mobile & web development</strong> alanlarında uzmanlaştım. 
               Modern teknolojilerle <strong>performans odaklı</strong> ve 
               <strong> ölçeklenebilir</strong> çözümler üretme konusunda deneyim kazandım.
@@ -207,11 +207,11 @@ const Experience: React.FC = () => {
             
             <div className="summary-highlights">
               <div className="highlight">
-                <span className="highlight-number">3+</span>
+                <span className="highlight-number">2+</span>
                 <span className="highlight-label">Yıl Deneyim</span>
               </div>
               <div className="highlight">
-                <span className="highlight-number">15+</span>
+                <span className="highlight-number">6+</span>
                 <span className="highlight-label">Tamamlanan Proje</span>
               </div>
               <div className="highlight">

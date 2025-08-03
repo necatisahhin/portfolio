@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
         "Real-time bildirimler",
         "Çiftçi iletişim platformu"
       ],
-      linkedin: "https://www.linkedin.com/posts/necatisahhin_metin-temelli-sanal-terapi-ve-modern-activity-7335674426031493120-H1E9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj4qr8ByQ41hBroJnwZds-B1PtgnGnOs3U",
+      linkedin: "",
       demo: null,
       featured: true
     },
@@ -99,7 +99,7 @@ const Projects: React.FC = () => {
         "Responsive tasarım",
         "Güvenli authentication"
       ],
-      linkedin: "https://www.linkedin.com/posts/necatisahhin_fullstack-nodejs-react-activity-7340124690104877056-km7C?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj4qr8ByQ41hBroJnwZds-B1PtgnGnOs3U",
+      linkedin: "https://www.linkedin.com/posts/necatisahhin_metin-temelli-sanal-terapi-ve-modern-activity-7335674426031493120-H1E9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADj4qr8ByQ41hBroJnwZds-B1PtgnGnOs3U",
       demo: "https://demo-link.com",
       featured: false
     },
