@@ -1,5 +1,7 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import StructuredData from './StructuredData';
 import { 
   FaGithub, 
   FaLinkedin, 
@@ -41,6 +43,13 @@ const Hero: React.FC = () => {
 
   return (
     <section className="hero">
+      <Helmet>
+        <title>Necati Can Şahin - Full Stack Developer | Ana Sayfa</title>
+        <meta name="description" content="Necati Can Şahin - React, React Native, Node.js uzmanı Full Stack Developer. 2+ yıl deneyim, 6+ proje, modern web ve mobil uygulama geliştirme." />
+        <meta name="keywords" content="Necati Can Şahin, Full Stack Developer, React Developer, React Native Developer, JavaScript, TypeScript, Node.js" />
+        <link rel="canonical" href="https://necaticansahin.com" />
+      </Helmet>
+      <StructuredData type="person" />
       <div className="hero-container">
         <motion.div 
           className="hero-content"
@@ -52,15 +61,15 @@ const Hero: React.FC = () => {
             <motion.h1 className="hero-title">
               <span className="greeting">Merhaba, Ben</span>
               <span className="name">Necati Can Şahin</span>
-              <motion.span 
-                className="role"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1, duration: 0.8 }}
-              >
-                Full Stack Developer
-              </motion.span>
             </motion.h1>
+            <motion.h2 
+              className="role"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+            >
+              Full Stack Developer
+            </motion.h2>
             
             <motion.p className="hero-description" variants={itemVariants}>
               React Native, ReactJS, Node.js ve modern teknolojilerle 
@@ -106,6 +115,7 @@ const Hero: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
+                aria-label="GitHub profilimi görüntüle"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -118,6 +128,7 @@ const Hero: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
+                aria-label="LinkedIn profilimi görüntüle"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -128,6 +139,7 @@ const Hero: React.FC = () => {
               <motion.a
                 href="mailto:necatisahin3152@gmail.com"
                 className="social-link"
+                aria-label="E-posta gönder"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >

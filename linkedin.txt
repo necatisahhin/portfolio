@@ -1,0 +1,29 @@
+🚀 Yeni portfolyo sitem yayında! 
+
+React ve TypeScript kullanarak geliştirdiğim kişisel portfolyo sitemi Netlify üzerinden yayına aldım. 
+
+✨ Özellikler:
+• Modern ve responsive tasarım
+• Projelerim ve deneyimlerim
+• İletişim formu
+• CV indirme özelliği
+
+Siteyi ziyaret edebilir ve geri bildirimlerinizi paylaşabilirsiniz 👉 [site-url]
+
+#WebDevelopment #React #TypeScript #Portfolio #Frontend #Developer
+
+---
+
+🚀 My new portfolio website is live!
+
+I've launched my personal portfolio site built with React and TypeScript, deployed on Netlify.
+
+✨ Features:
+• Modern and responsive design
+• Projects and experience showcase
+• Contact form
+• CV download functionality
+
+Feel free to visit and share your feedback 👉 [site-url]
+
+#WebDevelopment #React #TypeScript #Portfolio #Frontend #Developer
