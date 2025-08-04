@@ -41,6 +41,19 @@
   opacity: 0.9;
 }
 
+/* Loading Section for Lazy Components */
+.loading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.1rem;
+  color: #666;
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
 /* Header Styles */
 .header {
   position: fixed;

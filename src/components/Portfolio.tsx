@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { motion } from 'framer-motion';
 import Header from './Header';
 import Hero from './Hero';
-import About from './About';
-import Experience from './Experience';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
 import './Portfolio.css';
+
+// Lazy load components
+const About = lazy(() => import('./About'));
+const Experience = lazy(() => import('./Experience'));
+const Skills = lazy(() => import('./Skills'));
+const Projects = lazy(() => import('./Projects'));
+const Contact = lazy(() => import('./Contact'));
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -91,25 +93,35 @@ const Portfolio: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <Header activeSection={activeSection} />
-      <main>
-        <section id="home">
+      <main role="main">
+        <section id="home" aria-label="Ana Sayfa">
           <Hero />
         </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="experience">
-          <Experience />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <Suspense fallback={<div className="loading-section">Yükleniyor...</div>}>
+          <section id="about" aria-label="Hakkımda">
+            <About />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="loading-section">Yükleniyor...</div>}>
+          <section id="experience" aria-label="Deneyimlerim">
+            <Experience />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="loading-section">Yükleniyor...</div>}>
+          <section id="skills" aria-label="Yeteneklerim">
+            <Skills />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="loading-section">Yükleniyor...</div>}>
+          <section id="projects" aria-label="Projelerim">
+            <Projects />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="loading-section">Yükleniyor...</div>}>
+          <section id="contact" aria-label="İletişim">
+            <Contact />
+          </section>
+        </Suspense>
       </main>
     </motion.div>
   );
